@@ -1,2 +1,2 @@
 #!/usr/bin/python3
-exec(open("easter_egg.py").read())
+import easter_egg
