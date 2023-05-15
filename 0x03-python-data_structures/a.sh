@@ -1,2 +1,2 @@
 #!/bin/bash
-chmod +x *.py
+chmod 700 *.py
