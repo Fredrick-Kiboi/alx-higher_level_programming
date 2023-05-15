@@ -11,4 +11,5 @@ def print_list_integer(my_list=[]):
   """
 
   for integer in my_list:
-    print(f"{integer}")
+    print(str.format("{0}", integer))
+
