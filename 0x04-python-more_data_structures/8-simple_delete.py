@@ -9,6 +9,6 @@ You are not allowed to import any module
 """
 
 
-def update_dictionary(a_dictionary, key, value):
-    a_dictionary[key] = value
+def simple_delete(a_dictionary, key=""):
+    a_dictionary.pop(key, None)
     return a_dictionary
