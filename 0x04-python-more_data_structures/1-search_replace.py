@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 
+
 """
 Function that replaces all occurences of an element
 by another in a new list
