@@ -18,7 +18,8 @@
 - How to raise a builtin exception
 - When do we need to implement a clean-up action after an exception
 
-### Tasks0. Safe list printing<br>
+### Tasks
+0. **Safe list printing**<br>
 *mandatory*
 - Write a function that prints x elements of a list.
 
