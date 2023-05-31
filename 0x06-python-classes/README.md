@@ -45,28 +45,47 @@
 Documentation is now mandatory! Each module, class, and method must contain docstring as comments. Example Google Style Python Docstrings
 
 ## Tasks
-0. **My first square**\n
-*mandatory*\n
-Write an empty class Square that defines a square:\n
-You are not allowed to import any module\n
+0. **My first square**
+g
+*mandatory*
+g
+Write an empty class Square that defines a square:
+g
+You are not allowed to import any module
+g
 
 
-1. **Square with size**\n
-*mandatory*\n
-Write a class Square that defines a square by: (based on 0-square.py)\n
-Private instance attribute: size\n
-Instantiation with size (no type/value verification)\n
-You are not allowed to import any module\n
-\n
-Why size is private attribute?\n
+1. **Square with size**
+g
+*mandatory*
+g
+Write a class Square that defines a square by: (based on 0-square.py)
+g
+Private instance attribute: size
+g
+Instantiation with size (no type/value verification)
+g
+You are not allowed to import any module
+g
+
+g
+Why size is private attribute?
+g
 The size of a square is crucial for a square, many things depend of it (area computation, etc.), so you, as class builder, must control the type and value of this attribute. One way to have the control is to keep it privately. You will see in next tasks how to get, update and validate the size value.
 
-2. **Size validation**\n
-*mandatory*\n
-Write a class Square that defines a square by: (based on 1-square.py)\n
+2. **Size validation**
+g
+*mandatory*
+g
+Write a class Square that defines a square by: (based on 1-square.py)
+g
 
-Private instance attribute: size\n
-Instantiation with optional size: def __init__(self, size=0):\n
-size must be an integer, otherwise raise a TypeError exception with the message size must be an integer\n
-if size is less than 0, raise a ValueError exception with the message size must be >= 0\n
-You are not allowed to import any module\n
+Private instance attribute: size
+g
+Instantiation with optional size: def __init__(self, size=0):
+g
+size must be an integer, otherwise raise a TypeError exception with the message size must be an integer
+g
+if size is less than 0, raise a ValueError exception with the message size must be >= 0
+g
+You are not allowed to import any module
