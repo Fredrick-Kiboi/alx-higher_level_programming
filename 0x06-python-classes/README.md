@@ -45,14 +45,14 @@
 Documentation is now mandatory! Each module, class, and method must contain docstring as comments. Example Google Style Python Docstrings
 
 ## Tasks
-0. **My first square**
+0. **My first square**<br>
 *mandatory*
 
 Write an empty class Square that defines a square:
 You are not allowed to import any module
 
 
-1. **Square with size**
+1. **Square with size**<br>
 *mandatory*
 
 Write a class Square that defines a square by: (based on 0-square.py)
