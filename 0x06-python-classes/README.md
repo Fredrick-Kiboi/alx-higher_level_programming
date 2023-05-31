@@ -5,10 +5,10 @@
 
 - As usual, make sure you type (never copy and paste), test, understand all examples shown in the following links (including those in the video), test again etc. The biggest and most important takeaway of this project is: experiment by yourself OOP, play with it!
 
-* Read or watch the below resources in the order presented. *
+*Read or watch the below resources in the order presented.*
 
 ## Resources
-** Read or Watch: **
+**Read or Watch:**
 - Object Oriented Programming (Read everything until the paragraph “Inheritance” excluded. You do NOT have to learn about class attributes, classmethod and staticmethod yet)
 - Object-Oriented Programming (Please *be careful*: in most of the following paragraphs, the author shows things the way you should not use or write a class in order to help you better understand some concepts and how everything works in Python 3. Make sure you read everything in the following paragraphs: General Introduction, First-class Everything, A Minimal Class in Python, Attributes (You DON’T have to learn about class attributes), Methods, The `__init__` Method, *"Data Abstraction, Data Encapsulation, and Information Hiding,” “Public, Protected, and Private Attributes”*)
 - Properties vs. Getters and Setters
@@ -45,32 +45,28 @@
 Documentation is now mandatory! Each module, class, and method must contain docstring as comments. Example Google Style Python Docstrings
 
 ## Tasks
-0. **My first square**
-*mandatory*
-Write an empty class Square that defines a square:
+0. **My first square**\n
+*mandatory*\n
+Write an empty class Square that defines a square:\n
+You are not allowed to import any module\n
 
-You are not allowed to import any module
 
-
-1. **Square with size**
-*mandatory*
-Write a class Square that defines a square by: (based on 0-square.py)
-
-Private instance attribute: size
-Instantiation with size (no type/value verification)
-You are not allowed to import any module
-Why?
-
-Why size is private attribute?
-
+1. **Square with size**\n
+*mandatory*\n
+Write a class Square that defines a square by: (based on 0-square.py)\n
+Private instance attribute: size\n
+Instantiation with size (no type/value verification)\n
+You are not allowed to import any module\n
+\n
+Why size is private attribute?\n
 The size of a square is crucial for a square, many things depend of it (area computation, etc.), so you, as class builder, must control the type and value of this attribute. One way to have the control is to keep it privately. You will see in next tasks how to get, update and validate the size value.
 
-2. **Size validation**
-*mandatory*
-Write a class Square that defines a square by: (based on 1-square.py)
+2. **Size validation**\n
+*mandatory*\n
+Write a class Square that defines a square by: (based on 1-square.py)\n
 
-Private instance attribute: size
-Instantiation with optional size: def __init__(self, size=0):
-size must be an integer, otherwise raise a TypeError exception with the message size must be an integer
-if size is less than 0, raise a ValueError exception with the message size must be >= 0
-You are not allowed to import any module
+Private instance attribute: size\n
+Instantiation with optional size: def __init__(self, size=0):\n
+size must be an integer, otherwise raise a TypeError exception with the message size must be an integer\n
+if size is less than 0, raise a ValueError exception with the message size must be >= 0\n
+You are not allowed to import any module\n
