@@ -22,12 +22,13 @@
 0. **Safe list printing**<br>
 *mandatory*
 - Write a function that prints x elements of a list.
- - Prototype: def safe_print_list(my_list=[], x=0):<br>
- - my_list can contain any type (integer, string, etc.)<br>
- - All elements must be printed on the same line followed by a new line.<br>
- - x represents the number of elements to print<br>
- - x can be bigger than the length of my_list<br>
- - Returns the real number of elements printed<br>
- - You have to use try: / except:<br>
- - You are not allowed to import any module<br>
- - You are not allowed to use len()
+
+  - Prototype: def safe_print_list(my_list=[], x=0):<br>
+  - my_list can contain any type (integer, string, etc.)<br>
+  - All elements must be printed on the same line followed by a new line.<br>
+  - x represents the number of elements to print<br>
+  - x can be bigger than the length of my_list<br>
+  - Returns the real number of elements printed<br>
+  - You have to use try: / except:<br>
+  - You are not allowed to import any module<br>
+  - You are not allowed to use len()
