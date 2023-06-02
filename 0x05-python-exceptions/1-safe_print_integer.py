@@ -13,6 +13,7 @@ Returns:
      False : Otherwise
 """
 
+
 def safe_print_integer(value):
     """
 Function that prints an integer with "{:d}".format()
