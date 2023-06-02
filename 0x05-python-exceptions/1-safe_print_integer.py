@@ -1,34 +1,22 @@
 #!/usr/bin/python3
-
 """
-Function that prints an integer with "{:d}".format()
+safe_print_integer(value)
 
-Prototype: def safe_print_integer(value):
+Prints an integer with "{:d}".format().
 
 Args:
-    value : type to be evaluated if it's an integer
+  value: The integer to print.
 
 Returns:
-     True : if it is an integer
-     False : Otherwise
-"""
+  True if the integer was printed successfully, False otherwise.
 
+Raises:
+  ValueError: If the value is not an integer.
+"""
 
 def safe_print_integer(value):
-    """
-Function that prints an integer with "{:d}".format()
-
-Prototype: def safe_print_integer(value):
-
-Args:
-    value : type to be evaluated if it's an integer
-
-Returns:
-     True : if it is an integer
-     False : Otherwise
-"""
-    try:
-        print("{:d}".format(value))
-        return True
-    except ValueError:
-        return False
+  try:
+    print("{:d}".format(value))
+    return True
+  except ValueError:
+    return False
