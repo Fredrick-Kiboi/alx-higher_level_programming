@@ -274,3 +274,60 @@ a = (1, 2)
 b = (1, 2)
 a is b
 ```
+
+26. **Empty is not empty**
+*mandatory*
+- What does this script print?
+```Python
+a = ()
+b = ()
+a is b
+```
+
+27. **Still the same?**
+*mandatory*
+```Python
+>>> id(a)
+139926795932424
+>>> a
+[1, 2, 3, 4]
+>>> a = a + [5]
+>>> id(a)
+```
+- Will the last line of this script print 139926795932424? Answer with Yes or No.
+
+28. **Same or not?**
+*mandatory*
+```Python
+>>> a
+[1, 2, 3]
+>>> id (a)
+139926795932424
+>>> a += [4]
+>>> id(a)
+```
+- Will the last line of this script print 139926795932424? Answer with Yes or No.
+
+29. **#pythonic**
+*#advanced*
+- Write a function magic_string() that returns a string “BestSchool” n times the number of the iteration (see code):
+  - Format: see example
+  - Your file should be maximum 4-line long (no documentation needed)
+  - You are not allowed to import any module
+
+30. **Low memory cost**
+*#advanced*
+- Write a class LockedClass with no class or object attribute, that prevents the user from dynamically creating new instance attributes, except if the new instance attribute is called first_name.
+  - You are not allowed to import any module
+
+31. **int 1/3**
+*#advanced*
+```Python
+julien@ubuntu:/python3$ cat int.py 
+a = 1
+b = 1
+julien@ubuntu:/python3$ 
+```
+- Assuming we are using a CPython implementation of Python3 with default options/configuration:
+  - How many int objects are created by the execution of the first line of the script? (103-line1.txt)
+  - How many int objects are created by the execution of the second line of the script (103-line2.txt)
