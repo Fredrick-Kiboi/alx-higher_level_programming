@@ -138,11 +138,49 @@
 >>> print(l1 == l2)
 ```
 
-11. And with a list, is it the same
-mandatory
-Score: 0.0% (Checks completed: 0.0%)
-What do these 3 lines print?
-
+11. **And with a list, is it the same**
+*mandatory*
+- What do these 3 lines print?
+```Python
 >>> l1 = [1, 2, 3]
 >>> l2 = [1, 2, 3] 
 >>> print(l1 is l2)
+```
+
+12. **And with a list, is it really equal**
+*mandatory*
+- What do these 3 lines print?
+```Python
+>>> l1 = [1, 2, 3]
+>>> l2 = l1
+>>> print(l1 == l2)
+```
+
+13. **And with a list, is it really the same**
+*mandatory*
+- What do these 3 lines print?
+```Python
+>>> l1 = [1, 2, 3]
+>>> l2 = l1
+>>> print(l1 is l2)
+```
+
+14. **List append**
+*mandatory*
+- What does this script print?
+```Python
+l1 = [1, 2, 3]
+l2 = l1
+l1.append(4)
+print(l2)
+```
+
+15. **List add**
+*mandatory*
+- What does this script print?
+```Python
+l1 = [1, 2, 3]
+l2 = l1
+l1 = l1 + [4]
+print(l2)
+```
