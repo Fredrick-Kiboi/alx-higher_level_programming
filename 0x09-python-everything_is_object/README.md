@@ -235,3 +235,42 @@ print(l1)
 a = ()
 ```
 - Is a a tuple? Answer with Yes or No.
+
+21. **Tuple or not?**
+*mandatory*
+```Python
+a = (1, 2)
+```
+- Is a a tuple? Answer with Yes or No.
+
+22. **Tuple or not?**
+*mandatory*
+```Python
+a = (1)
+```
+- Is a a tuple? Answer with Yes or No.
+
+23. **Tuple or not?**
+*mandatory*
+```Python
+a = (1, )
+```
+- Is a a tuple? Answer with Yes or No.
+
+24. Who I am?
+*mandatory*
+- What does this script print?
+```Python
+a = (1)
+b = (1)
+a is b
+```
+
+25. **Tuple or not**
+*mandatory*
+- What does this script print?
+```Python
+a = (1, 2)
+b = (1, 2)
+a is b
+```
