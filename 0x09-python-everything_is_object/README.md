@@ -92,3 +92,48 @@
 >>> a = 89
 >>> b = a + 1
 ```
+
+6. **Is equal**
+*mandatory*
+- What do these 3 lines print?
+```Python
+>>> s1 = "Best School"
+>>> s2 = s1
+>>> print(s1 == s2)
+```
+
+7. **Is the same**
+*mandatory*
+- What do these 3 lines print?
+```Python
+>>> s1 = "Best"
+>>> s2 = s1
+>>> print(s1 is s2)
+```
+
+8. **Is really equal**
+*mandatory*
+- What do these 3 lines print?
+```Python
+>>> s1 = "Best School"
+>>> s2 = "Best School"
+>>> print(s1 == s2)
+```
+
+9. **Is really the same**
+*mandatory*
+- What do these 3 lines print?
+```Python
+>>> s1 = "Best School"
+>>> s2 = "Best School"
+>>> print(s1 is s2)
+```
+
+10. **And with a list, is it equal**
+*mandatory*
+- What do these 3 lines print?
+```Python
+>>> l1 = [1, 2, 3]
+>>> l2 = [1, 2, 3] 
+>>> print(l1 == l2)
+```
