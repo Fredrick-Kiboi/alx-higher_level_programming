@@ -1,3 +1,3 @@
-class LockedClass():
-    def __init__(cls, first_name):
-        return LockedClass.first_name
+#!/usr/bin/python3
+class LockedClass:
+    __slots__ = ['first_name']
