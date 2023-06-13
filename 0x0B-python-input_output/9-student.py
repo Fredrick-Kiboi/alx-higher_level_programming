@@ -1,4 +1,4 @@
-#!/usr/bin/
+#!/usr/bin/python3
 """
 Write a class student
 Has public instance attributes: first_name, last_name, age
