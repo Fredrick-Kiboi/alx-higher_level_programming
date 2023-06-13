@@ -1,13 +1,14 @@
 #!/usr/bin/python3
 
-'''
-read_file - function that reads a text file(UTF8) and prints to stdout
+"""
+read_file - function that reads a text file (UTF-8) and prints to stdout
 
 Args:
-@filename : the file to read form
+    filename (str): the file to read from
 
-Return: Nothing
-'''
+Returns:
+    None
+"""
 
 def read_file(filename=""):
     with open(filename, mode="r", encoding="utf-8") as myfile:
