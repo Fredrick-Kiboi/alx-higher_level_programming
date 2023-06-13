@@ -12,5 +12,8 @@ Returns:
 
 
 def append_write(filename="", text=""):
+    """
+    append a string to a text file (utf-8)
+    """
     with open(filename, mode="a", encoding="utf-8") as myfile:
         return myfile.write(text)
