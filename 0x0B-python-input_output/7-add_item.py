@@ -1,19 +1,14 @@
 #!/usr/bin/python3
-"""
-Script that adds all argurments to a python list,
-and then saves them to a file
-
-File must be saved as a JSON representation in a file named
-add_item.json
-
-Summary: Load, add & Save
-"""
+"""module to load, add and save"""
 
 
 import sys
+
+
 if __name__ == "__main__":
     save_to_json_file = __import__('5-save_to_json_file').save_to_json_file
-    load_from_json_file = __import__('6-load_from_json_file').load_from_json_file
+    load_from_json_file =\
+        __import__('6-load_from_json_file').load_from_json_file
 
     try:
         args = load_from_json_file("add_item.json")
