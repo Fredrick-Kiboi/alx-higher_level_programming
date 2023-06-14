@@ -1,13 +1,17 @@
+#!/usr/bin/python3
 import sys
 import signal
 from collections import defaultdict
 
+
 STATUSES = ['200', '301', '400', '401', '403', '404', '405', '500']
+
 
 def print_statistics(total_size, status_counts):
     print(f'Total file size: {total_size}')
     for status_code in sorted(status_counts):
         print(f'{status_code}: {status_counts[status_code]}')
+
 
 def compute_metrics():
     total_size = 0
@@ -29,6 +33,7 @@ def compute_metrics():
     except KeyboardInterrupt:
         print_statistics(total_size, status_counts)
 
+
 if __name__ == "__main__":
-    signal.signal(signal.SIGINT, signal.SIG_DFL)  # Allow keyboard interruption (CTRL + C)
+    signal.signal(signal.SIGINT, signal.SIG_DFL)
     compute_metrics()
