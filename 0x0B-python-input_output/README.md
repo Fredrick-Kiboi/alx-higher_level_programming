@@ -124,7 +124,7 @@
 - Otherwise, all attributes must be retrieved
 - You are not allowed to import any module
 
-11. **Student to disk and reload**
+11. **Student to disk and reload** <br>
 *mandatory*
 - Write a class Student that defines a student by: (based on 10-student.py)
 - Public instance attributes:
@@ -142,7 +142,7 @@
 - You are not allowed to import any module
 - Now, you have a simple implementation of a serialization and deserialization mechanism (concept of representation of an object to another format, without losing any information and allow us to rebuild an object based on this representation)
 
-12. **Pascal's Triangle**
+12. **Pascal's Triangle** <br>
 *mandatory*
 **Technical interview preparation:**
 - You are not allowed to google anything
@@ -160,17 +160,15 @@
 - You don’t need to manage file permission or file doesn't exist exceptions.
 - You are not allowed to import any module
 
-14. **Log parsing**
+14. **Log parsing** <br>
 *#advanced*
 - Write a script that reads stdin line by line and computes metrics:
-```Python
-Input format: <IP Address> - [<date>] "GET /projects/260 HTTP/1.1" <status code> <file size>
-Each 10 lines and after a keyboard interruption (CTRL + C), prints those statistics since the beginning:
-Total file size: File size: <total size>
-where is the sum of all previous (see input format above)
-Number of lines by status code:
-possible status code: 200, 301, 400, 401, 403, 404, 405 and 500
-if a status code doesn’t appear, don’t print anything for this status code
-format: <status code>: <number>
-status codes should be printed in ascending order
-```
+- Input format: `<IP Address> - [<date>] "GET /projects/260 HTTP/1.1" <status code> <file size>`
+- Each 10 lines and after a keyboard interruption `(CTRL + C)`, prints those statistics since the beginning:
+- Total file size: `File size: <total size>`
+- where is the sum of all previous (see input format above)
+- Number of lines by status code:
+- possible status code: `200, 301, 400, 401, 403, 404, 405 and 500`
+- if a status code doesn’t appear, don’t print anything for this status code
+- format: `<status code>`: `<number>`
+- status codes should be printed in ascending order
