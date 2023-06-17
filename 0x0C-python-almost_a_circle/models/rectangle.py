@@ -16,6 +16,10 @@ class Rectangle(Base):
         self.x = x
         self.y = y
 
+    # Overide string method
+    def __str__(self):
+        return (f"[Rectangle] ({self.id}) {self.__x}/{self.__y} - {self.__width}/{self.__height}")
+
     # Width getter and setter
     @property
     def width(self):
@@ -71,3 +75,10 @@ class Rectangle(Base):
     def area(self):
         """Returns the area value of the Rectangle instance"""
         return self.__width * self.__height
+
+    def display(self):
+        """Prints the Rectangle instance with the character #"""
+        for h in range(self.__height):
+            for w in range(self.__width):
+                print("#", end="")
+            print()
