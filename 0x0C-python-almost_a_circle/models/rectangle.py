@@ -16,9 +16,11 @@ class Rectangle(Base):
         self.x = x
         self.y = y
 
-    # Overide string method
     def __str__(self):
-        return (f"[Rectangle] ({self.id}) {self.__x}/{self.__y} - {self.__width}/{self.__height}")
+        # Overide string method
+        return (
+            "[Rectangle] ({}) {}/{} - {}/{}".format(
+                self.id, self.x, self.y, self.width, self.height))
 
     # Width getter and setter
     @property
