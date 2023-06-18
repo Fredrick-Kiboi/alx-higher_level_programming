@@ -1,0 +1,11 @@
+class Rectangle:
+    def __init__(self, width):
+        self.width = width       # Public attribute
+        self._width = width      # Private attribute convention
+        self.__width = width     # Name-mangled attribute
+
+rectangle = Rectangle(5)
+print(rectangle.width)         # Output: 5
+print(rectangle._width)        # Output: 5
+print(rectangle.__width)       # AttributeError: 'Rectangle' object has no attribute '__width'
+print(rectangle._Rectangle__width)  # Output: 5
