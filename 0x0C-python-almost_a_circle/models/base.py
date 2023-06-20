@@ -113,3 +113,7 @@ class Base:
         except FileNotFoundError:
             pass
         return objects
+
+    @staticmethod
+    def draw(list_rectangles, list_squares):
+        """draws all the rectangles and Squares in a new window"""
