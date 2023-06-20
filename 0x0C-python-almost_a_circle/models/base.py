@@ -2,6 +2,7 @@
 """
 This is the first class Base
 """
+import csv
 import json
 
 
@@ -73,3 +74,42 @@ class Base:
                 return instances
         except FileNotFoundError:
             return []  # Return an empty list if the file doesn't exist
+
+    @classmethod
+    def save_to_file_csv(cls, list_objs):
+        """Serializes and saves objects to a CSV file"""
+        filename = cls.__name__ + ".csv"
+        with open(filename, 'w', newline='') as file:
+            writer = csv.writer(file)
+            if list_objs is not None:
+                for obj in list_objs:
+                    if cls.__name__ == "Rectangle":
+                        row = [obj.id, obj.width, obj.height, obj.x, obj.y]
+                    elif cls.__name__ == "Square":
+                        row = [obj.id, obj.size, obj.x, obj.y]
+                    writer.writerow(row)
+
+    @classmethod
+    def load_from_file_csv(cls):
+        """Deserializes and loads objects from a CSV file"""
+        filename = cls.__name__ + ".csv"
+        objects = []
+        try:
+            with open(filename, 'r') as file:
+                reader = csv.reader(file)
+                for row in reader:
+                    if cls.__name__ == "Rectangle":
+                        id, width, height, x, y = row
+                        obj = cls.create(
+                            id=id, width=int(width),
+                            height=int(height), x=int(x), y=int(y)
+                            )
+                    elif cls.__name__ == "Square":
+                        id, size, x, y = row
+                        obj = cls.create(
+                            id=id, size=int(size), x=int(x), y=int(y)
+                            )
+                    objects.append(obj)
+        except FileNotFoundError:
+            pass
+        return objects
