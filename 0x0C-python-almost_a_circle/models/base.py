@@ -33,7 +33,8 @@ class Base:
         if list_objs is None:
             list_objs = []
         filename = cls.__name__ + ".json"
-        json_str = cls.to_json_string([obj.to_dictionary() for obj in list_objs])
+        json_str = cls.to_json_string(
+            [obj.to_dictionary() for obj in list_objs])
         with open(filename, "w") as file:
             file.write(json_str)
 
@@ -49,8 +50,26 @@ class Base:
     def create(cls, **dictionary):
         """Returns an instance with all the attributes already set"""
         if cls.__name__ == "Rectangle":
-            dummy = cls(1, 1) # Create a dummy Rectangle instance
+            dummy = cls(1, 1)  # Create a dummy Rectangle instance
         elif cls.__name__ == "Square":
-            dummy = cls(1) # Create a dummy Square instance
-        dummy.update(**dictionary) # Calling update with **dictionary as kwargs
+            dummy = cls(1)  # Create a dummy Square instance
+        dummy.update(**dictionary)  # alling update with **dictionary as kwargs
         return dummy
+
+    @classmethod
+    def load_from_file(cls):
+        """Returns a list of instances loaded from a file"""
+        filename = cls.__name__ + ".json"  # Generating filename based on class
+        try:
+            with open(filename, "r", encoding="utf-8") as file:
+                json_string = file.read()  # Read file contents
+                # Convert JSON string to dict
+                dictionaries = Base.from_json_string(json_string)
+                instances = []  # List to store the instances
+                for dictionary in dictionaries:
+                    # Create an instance using the dictionary
+                    instance = cls.create(**dictionary)
+                    instances.append(instance)  # Add the instance to the list
+                return instances
+        except FileNotFoundError:
+            return []  # Return an empty list if the file doesn't exist

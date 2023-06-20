@@ -88,7 +88,8 @@ class Rectangle(Base):
     def update(self, *args, **kwargs):
         """Assigns an argument to each attribute"""
         if args:
-        # If *args is not empty, assign the values from args to the corresponding attributes
+            """If *args is not empty, assign the values from args
+            to the corresponding attributes"""
             if len(args) >= 1:
                 self.id = args[0]
             if len(args) >= 2:
@@ -100,7 +101,8 @@ class Rectangle(Base):
             if len(args) >= 5:
                 self.y = args[4]
         else:
-        # If *args is empty, assign the values from kwargs to the corresponding attributes
+            """If *args is empty, assign the values
+              from kwargs to the corresponding attributes"""
             for key, value in kwargs.items():
                 if key == 'id':
                     self.id = value
