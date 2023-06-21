@@ -4,6 +4,7 @@ This is the first class Base
 """
 import csv
 import json
+import turtle
 
 
 class Base:
@@ -117,3 +118,37 @@ class Base:
     @staticmethod
     def draw(list_rectangles, list_squares):
         """draws all the rectangles and Squares in a new window"""
+        # Create a turtle object
+        screen = turtle.Screen()
+        pen = turtle.Turtle()
+
+        # Draw Rectangles
+        for rectangle in list_rectangles:
+            pen.penup()
+            pen.goto(rectangle.x, rectangle.y)
+            pen.pendown()
+            pen.forward(rectangle.width)
+            pen.left(90)
+            pen.forward(rectangle.height)
+            pen.left(90)
+            pen.forward(rectangle.width)
+            pen.left(90)
+            pen.forward(rectangle.height)
+            pen.left(90)
+
+        # Draw squares
+        for square in list_squares:
+            pen.penup()
+            pen.goto(square.x, square.y)
+            pen.pendown()
+            pen.forward(square.size)
+            pen.left(90)
+            pen.forward(square.size)
+            pen.left(90)
+            pen.forward(square.size)
+            pen.left(90)
+            pen.forward(square.size)
+            pen.left(90)
+
+        # Close the window when done
+        turtle.done()
