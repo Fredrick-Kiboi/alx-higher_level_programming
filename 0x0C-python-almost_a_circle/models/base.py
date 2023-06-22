@@ -102,14 +102,14 @@ class Base:
                     if cls.__name__ == "Rectangle":
                         id, width, height, x, y = row
                         obj = cls.create(
-                            id=id, width=int(width),
+                            id=int(id), width=int(width),
                             height=int(height), x=int(x), y=int(y)
-                            )
+                        )
                     elif cls.__name__ == "Square":
                         id, size, x, y = row
                         obj = cls.create(
-                            id=id, size=int(size), x=int(x), y=int(y)
-                            )
+                            id=int(id), size=int(size), x=int(x), y=int(y)
+                        )
                     objects.append(obj)
         except FileNotFoundError:
             pass
