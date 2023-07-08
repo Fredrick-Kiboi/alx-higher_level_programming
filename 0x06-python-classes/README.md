@@ -42,35 +42,33 @@
 - How to use the getattr function
 
 ### More Info
-Documentation is now mandatory! Each module, class, and method must contain docstring as comments. Example Google Style Python Docstrings
+- Documentation is now mandatory! Each module, class, and method must contain docstring as comments.
+- Example Google Style Python Docstrings
 
 ## Tasks
 0. **My first square**<br>
 *mandatory*
 
-Write an empty class Square that defines a square:<br>
-You are not allowed to import any module
+- Write an empty class Square that defines a square:<br>
+  - You are not allowed to import any module
 
 
 1. **Square with size**<br>
 *mandatory*
 
-Write a class Square that defines a square by: (based on 0-square.py)<br>
-Private instance attribute: size<br>
-Instantiation with size (no type/value verification)<br>
-You are not allowed to import any module
+- Write a class Square that defines a square by: (based on 0-square.py)<br>
+  - Private instance attribute: size<br>
+  - Instantiation with size (no type/value verification)<br>
+  - You are not allowed to import any module
 
+  - Why size is private attribute?
+  - The size of a square is crucial for a square, many things depend of it (area computation, etc.), so you, as class builder, must control the type and value of this attribute.<br> One way to have the control is to keep it privately.<br> You will see in next tasks how to get, update and validate the size value.
 
-Why size is private attribute?
-
-The size of a square is crucial for a square, many things depend of it (area computation, etc.), so you, as class builder, must control the type and value of this attribute.<br> One way to have the control is to keep it privately.<br> You will see in next tasks how to get, update and validate the size value.
-
-2. **Size validation**
+2. **Size validation** <br>
 *mandatory*
-
-Write a class Square that defines a square by: (based on 1-square.py)<br>
-Private instance attribute: size<br>
-Instantiation with optional size: def __init__(self, size=0):<br>
-size must be an integer, otherwise raise a TypeError exception with the message size must be an integer<br>
-if size is less than 0, raise a ValueError exception with the message size must be >= 0<br>
-You are not allowed to import any module
+- Write a class Square that defines a square by: (based on 1-square.py)<br>
+  - Private instance attribute: size<br>
+  - Instantiation with optional size: def __init__(self, size=0):<br>
+  - size must be an integer, otherwise raise a TypeError exception with the message size must be an integer<br>
+  - if size is less than 0, raise a ValueError exception with the message size must be >= 0<br>
+  - You are not allowed to import any module
