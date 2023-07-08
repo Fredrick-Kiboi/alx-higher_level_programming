@@ -75,12 +75,37 @@
 
 3. **Area of a square** <br>
 *mandatory*
-- Write a class Square that defines a square by: (based on 1-square.py)<br>
+- Write a class Square that defines a square by: (based on 2-square.py)<br>
+  - Private instance attribute: size<br>
+  - Instantiation with optional size: def __init__(self, size=0):<br>
+  - size must be an integer, otherwise raise a TypeError exception with the message size must be an integer<br>
+  - if size is less than 0, raise a ValueError exception with the message size must be >= 0<br>
+- Public instance method: def area(self): that returns the current square area
+- You are not allowed to import any module
+
+
+4. **Access and update private attribute** <br>
+*mandatory*
+- Write a class Square that defines a square by: (based on 3-square.py)<br>
   - Private instance attribute: size<br>
     - property def size(self): to retrieve it
     - property setter def size(self, value): to set it:
     - size must be an integer, otherwise raise a    TypeError exception with the message size must be an integer<br>
     - if size is less than 0, raise a ValueError exception with the message size must be >= 0<br>
-- - Instantiation with optional size: def __init__(self, size=0):<br>
+- Instantiation with optional size: def __init__(self, size=0):<br>
 - You are not allowed to import any module
 - Public instance method: def area(self): that returns the current square area
+
+5. **Printing a square** <br>
+*mandatory*
+- Write a class Square that defines a square by: (based on 4-square.py)<br>
+  - Private instance attribute: size<br>
+    - property def size(self): to retrieve it
+    - property setter def size(self, value): to set it:
+    - size must be an integer, otherwise raise a    TypeError exception with the message size must be an integer<br>
+    - if size is less than 0, raise a ValueError exception with the message size must be >= 0<br>
+- Instantiation with optional size: def __init__(self, size=0):<br>
+- Public instance method: def area(self): that returns the current square area
+- Public instance method: def my_print(self): that prints in stdout the square with the character #:
+  - if size is equal to 0, print an empty line
+- You are not allowed to import any module
