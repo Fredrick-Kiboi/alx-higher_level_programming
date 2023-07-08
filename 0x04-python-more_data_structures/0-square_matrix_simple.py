@@ -13,4 +13,5 @@ Returns:
 """
 
 def square_matrix_simple(matrix=[]):
-    return ([list(map(lambda x: x * x, row)) for row in matrix])
+    for row in matrix:
+        return list(map(lambda x: x * x, row))
