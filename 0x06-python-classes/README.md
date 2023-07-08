@@ -77,8 +77,10 @@
 *mandatory*
 - Write a class Square that defines a square by: (based on 1-square.py)<br>
   - Private instance attribute: size<br>
-  - Instantiation with optional size: def __init__(self, size=0):<br>
-  - size must be an integer, otherwise raise a TypeError exception with the message size must be an integer<br>
-  - if size is less than 0, raise a ValueError exception with the message size must be >= 0<br>
+    - property def size(self): to retrieve it
+    - property setter def size(self, value): to set it:
+    - size must be an integer, otherwise raise a    TypeError exception with the message size must be an integer<br>
+    - if size is less than 0, raise a ValueError exception with the message size must be >= 0<br>
+- - Instantiation with optional size: def __init__(self, size=0):<br>
 - You are not allowed to import any module
 - Public instance method: def area(self): that returns the current square area
