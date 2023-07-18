@@ -150,3 +150,9 @@ mandatory
 - The database name will be passed as an argument of the mysql command
 - You are not allowed to use the `DESCRIBE` or `EXPLAIN` statements
 
+6. **List all in table** <br>
+mandatory
+- Write a script that lists all rows of the table `first_table` from the database `hbtn_0c_0` in your MySQL server.
+- All fields should be printed
+- The database name will be passed as an argument of the mysql command
+
