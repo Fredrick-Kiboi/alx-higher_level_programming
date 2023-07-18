@@ -2,3 +2,4 @@
 -- the database name will be passed as an argument
 -- you are not allowed to use DESCRIBE or EXPLAIN
 SHOW COLUMNS FROM first_table FROM hbtn_0c_0
+
