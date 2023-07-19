@@ -227,3 +227,8 @@ mandatory
   - Table `first_table`
   - Field `name` in first_table
 
+18. **Temperatures #0** <br>
+#advanced
+- Import in `hbtn_0c_0` database this table dump: download
+- Write a script that displays the average temperature (Fahrenheit) by city ordered by temperature (descending).
+
