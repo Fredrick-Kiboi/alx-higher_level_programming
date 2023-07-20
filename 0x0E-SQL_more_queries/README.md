@@ -198,3 +198,28 @@ mandatory
 - If the database hbtn_0d_usa already exists, your script should not fail
 - If the table cities already exists, your script should not fail
 
+8. **Cities of California** <br>
+mandatory
+- Write a script that lists all the cities of California that can be found in the database hbtn_0d_usa.
+- The states table contains only one record where name = California (but the id can be different, as per the example)
+- Results must be sorted in ascending order by cities.id
+- You are not allowed to use the JOIN keyword
+- The database name will be passed as an argument of the mysql command
+
+9. **Cities by States** <br>
+mandatory
+- Write a script that lists all cities contained in the database hbtn_0d_usa.
+- Each record should display: cities.id - cities.name - states.name
+- Results must be sorted in ascending order by cities.id
+- You can use only one SELECT statement
+- The database name will be passed as an argument of the mysql command
+
+10. **Genre ID by show** <br>
+mandatory
+- Import the database dump from hbtn_0d_tvshows to your MySQL server: download
+- Write a script that lists all shows contained in hbtn_0d_tvshows that have at least one genre linked.
+- Each record should display: tv_shows.title - tv_show_genres.genre_id
+- Results must be sorted in ascending order by tv_shows.title and tv_show_genres.genre_id
+- You can use only one SELECT statement
+- The database name will be passed as an argument of the mysql command
+
