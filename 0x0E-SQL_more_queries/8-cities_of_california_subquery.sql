@@ -3,4 +3,7 @@
 -- Results must be sorted in ascending order by cities.id
 -- You are not allowed to use JOIN
 USE hbtn_0d_usa;
-SELECT id, name FROM cities AND states ORDER BY cities.id ASC; 
+SELECT cities.id, cities.name FROM cities WHERE cities.name = 'california' ORDER BY cities.id ASC
+UNION
+SELECT states.id, states.name FROM states WHERE states.name = 'california';
+
