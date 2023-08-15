@@ -1,6 +1,8 @@
 #!/usr/bin/node
-if (Number.isInteger(process.argv[2])) {
-  const str = process.argv;
-} else {
+const arg = process.argv[2];
+if (isNaN(arg)) {
   console.log('Not a number');
+} else {
+  const ret = Number(arg);
+  console.log('My number: ' + ret);
 }
