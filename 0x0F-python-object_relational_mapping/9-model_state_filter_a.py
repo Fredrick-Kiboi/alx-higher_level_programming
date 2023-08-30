@@ -21,11 +21,9 @@ def main():
     Session = sessionmaker(bind=engine)
     session = Session()
 
-    state = session.query(State).first()
-    if state:
+    states = session.query(State).filter(State.name.like("%a%")).all()
+    for state in states:
         print("{}: {}".format(state.id, state.name))
-    else:
-        print("Nothing")
 
 
 if __name__ == '__main__':
